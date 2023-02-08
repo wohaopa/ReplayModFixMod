@@ -13,4 +13,4 @@
 ## 说明
 在GTNH中使用ReplayMod遇到问题请在本项目中反馈。
 ## 使用方法
-下载ReplayMod 2.5.2版本。使用压缩软件打开，替换`com\replaymod\core\tweaker\ReplayModTweaker.class`为[ReplayModTweaker.class](https://github.com/wohaopa/ReplayModFixMod/replace/ReplayModTweaker.class) 将本mod与replaymod一并放入至mods文件夹。下载并安装[ffmpeg](https://www.gyan.dev/ffmpeg/builds/packages/ffmpeg-5.1.2-essentials_build.zip)至`.minecraft`目录即可。
+下载ReplayMod 2.5.2版本。使用压缩软件打开，替换`com\replaymod\core\tweaker\ReplayModTweaker.class`为[ReplayModTweaker.class](https://github.com/wohaopa/ReplayModFixMod/blob/master/replace/ReplayModTweaker.class) 将本mod与replaymod一并放入至mods文件夹。下载并安装[ffmpeg](https://www.gyan.dev/ffmpeg/builds/packages/ffmpeg-5.1.2-essentials_build.zip)至`.minecraft`目录即可。
