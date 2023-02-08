@@ -13,8 +13,7 @@ public abstract class NetHandlerPlayClientMixin {
 
     @Inject(method = "handleSpawnPlayer", at = @At("HEAD"), cancellable = true)
     public void inject(S0CPacketSpawnPlayer p_147237_1_, CallbackInfo ci) {
-        if (((NetHandlerPlayClient) (Object) this).gameController.theWorld == null
-                || p_147237_1_.func_148948_e() == null) {
+        if (((NetHandlerPlayClient) (Object) this).gameController.theWorld == null) {
             ci.cancel();
             System.out.println("Wrong packet: " + p_147237_1_);
         }
