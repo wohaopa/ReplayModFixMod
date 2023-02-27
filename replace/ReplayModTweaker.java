@@ -1,3 +1,9 @@
+/*
+* This file is from ReplayMod
+* Author Johni0702
+* Respect the open source GPTv3 protocol
+* Because this file is protected by transform, only files can be replaced
+ * */
 package com.replaymod.core.tweaker;
 
 import com.replaymod.extras.modcore.ModCoreInstaller;

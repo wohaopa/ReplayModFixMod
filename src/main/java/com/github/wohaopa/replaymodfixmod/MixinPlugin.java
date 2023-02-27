@@ -8,7 +8,7 @@ import org.spongepowered.asm.mixin.extensibility.IMixinConfigPlugin;
 import org.spongepowered.asm.mixin.extensibility.IMixinInfo;
 import org.spongepowered.libraries.org.objectweb.asm.tree.ClassNode;
 
-import cpw.mods.fml.relauncher.FMLLaunchHandler;
+import cpw.mods.fml.relauncher.*;
 
 public class MixinPlugin implements IMixinConfigPlugin {
 
@@ -35,7 +35,12 @@ public class MixinPlugin implements IMixinConfigPlugin {
     @Override
     public List<String> getMixins() {
         List<String> mixins = new ArrayList<>();
-        if (FMLLaunchHandler.side().isClient()) mixins.add("NetHandlerPlayClientMixin");
+        if (FMLLaunchHandler.side().isClient()) {
+            // mixins.add("NetHandlerPlayClientMixin");
+            mixins.add("NetworkManagerMixin");
+            mixins.add("MappingDataLoaderMixin");
+            mixins.add("BattlegearRenderHelperMixin");
+        }
         return mixins;
     }
 

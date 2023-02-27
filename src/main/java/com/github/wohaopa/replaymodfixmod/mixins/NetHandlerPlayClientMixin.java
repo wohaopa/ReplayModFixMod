@@ -17,6 +17,6 @@ public abstract class NetHandlerPlayClientMixin {
             ci.cancel();
             System.out.println("Wrong packet: " + p_147237_1_);
         }
-        System.out.println("ReplayModFixMod injected!");
+        System.out.println("[RM-fix]S0C injected!" + p_147237_1_);
     }
 }
