@@ -9,8 +9,8 @@ import cpw.mods.fml.common.Mod;
         modid = ReplayModFixMod.MODID,
         name = ReplayModFixMod.NAME,
         version = ReplayModFixMod.VERSION,
-         dependencies = "required-before:replaymod;required-after:spongemixins;")
-//        dependencies = "required-after:spongemixins;")
+        dependencies = "required-before:replaymod;required-after:spongemixins;")
+// dependencies = "required-after:spongemixins;")
 public class ReplayModFixMod {
 
     public static final Logger LOG = LogManager.getLogger("replaymod fix mod");
