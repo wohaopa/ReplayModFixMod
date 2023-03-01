@@ -36,10 +36,9 @@ public class MixinPlugin implements IMixinConfigPlugin {
     public List<String> getMixins() {
         List<String> mixins = new ArrayList<>();
         if (FMLLaunchHandler.side().isClient()) {
-            // mixins.add("NetHandlerPlayClientMixin");
             mixins.add("NetworkManagerMixin");
             mixins.add("MappingDataLoaderMixin");
-            mixins.add("BattlegearRenderHelperMixin");
+//            mixins.add("BattlegearRenderHelperMixin");
         }
         return mixins;
     }

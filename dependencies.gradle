@@ -22,6 +22,6 @@
  * For more details, see https://docs.gradle.org/7.6/userguide/java_library_plugin.html#sec:java_library_configurations_graph
  */
 dependencies {
-    implementation files("lib/battlegear2-1.7.10-1.1.2.1.jar")
-    implementation files("lib/replaymod-1.7.10-2.5.2.jar")
+    implementation("com.github.GTNewHorizons:Battlegear2:1.1.2.4:dev"){transitive = false}
+    implementation files("lib/replaymod-1.7.10-2.5.2.jars")
 }

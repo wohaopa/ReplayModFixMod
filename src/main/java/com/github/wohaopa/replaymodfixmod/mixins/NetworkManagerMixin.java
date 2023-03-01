@@ -21,7 +21,7 @@ public abstract class NetworkManagerMixin {
                     target = "Lnet/minecraft/network/Packet;func_148833_a(Lnet/minecraft/network/INetHandler;)V",
                     remap = false))
     private void inject(Packet packet, INetHandler netHandler) {
-        // System.out.printf("haha");
+
         try {
             packet.processPacket(netHandler);
         } catch (NullPointerException e) {
@@ -29,7 +29,7 @@ public abstract class NetworkManagerMixin {
                 ReplayModFixMod.LOG.log(Level.ERROR, "I don't known!");
                 return;
             }
-            ReplayModFixMod.LOG.log(Level.ERROR, "NPE!: %s", packet.getClass().getName());
+            ReplayModFixMod.LOG.log(Level.ERROR, "NPE!: %s" + packet.getClass().getName());
             ReplayModFixMod.LOG.catching(e);
         }
     }
